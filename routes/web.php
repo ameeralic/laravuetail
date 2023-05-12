@@ -16,3 +16,4 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [PublicPagesController::class,'index']);
+Route::get('/about', [PublicPagesController::class,'about']);

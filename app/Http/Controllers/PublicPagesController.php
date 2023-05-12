@@ -11,4 +11,9 @@ class PublicPagesController extends Controller
     {
         return Inertia::render('Public/Home');
     }
+
+    public function about()
+    {
+        return Inertia::render('Public/About');
+    }
 }
