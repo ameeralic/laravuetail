@@ -4,15 +4,35 @@
     "isEntry": true,
     "src": "resources/css/app.css"
   },
-  "resources/js/app.css": {
-    "file": "assets/app-e6b2dc93.css",
-    "src": "resources/js/app.css"
+  "resources/js/Pages/Home.css": {
+    "file": "assets/Home-e6b2dc93.css",
+    "src": "resources/js/Pages/Home.css"
+  },
+  "resources/js/Pages/Home.vue": {
+    "css": [
+      "assets/Home-e6b2dc93.css"
+    ],
+    "file": "assets/Home-43d94cc0.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Home.vue"
+  },
+  "resources/js/Pages/Home2.vue": {
+    "file": "assets/Home2-874bcceb.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Home2.vue"
   },
   "resources/js/app.js": {
-    "css": [
-      "assets/app-e6b2dc93.css"
+    "dynamicImports": [
+      "resources/js/Pages/Home.vue",
+      "resources/js/Pages/Home2.vue"
     ],
-    "file": "assets/app-4ac57a99.js",
+    "file": "assets/app-8ee1c723.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
