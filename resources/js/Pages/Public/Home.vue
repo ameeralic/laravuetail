@@ -37,18 +37,20 @@
                             >
                         </Transition>
                     </p>
-                    <Transition name="slide-fade">
-                        <div
-                            v-if="laravelShow && laravelMouseover"
-                            class="grid justify-items-end"
-                        >
-                            <button
-                                class="my-4 text-xs hidden md:block bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
+                    <div class="h-10">
+                        <Transition name="slide-fade">
+                            <div
+                                v-if="laravelShow && laravelMouseover"
+                                class="grid justify-items-end"
                             >
-                                Visit Laravel Official site
-                            </button>
-                        </div>
-                    </Transition>
+                                <button
+                                    class="my-4 text-xs hidden md:block bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
+                                >
+                                    Visit Laravel Official site
+                                </button>
+                            </div>
+                        </Transition>
+                    </div>
                 </div>
 
                 <div
@@ -76,11 +78,9 @@
                             <span v-if="vueShow && vueMouseover">.JS</span>
                         </Transition>
                     </p>
+                    <div class="h-10">
                     <Transition name="slide-fade">
-                        <div
-                            v-if="vueShow && vueMouseover"
-                            class=""
-                        >
+                        <div v-if="vueShow && vueMouseover" class="">
                             <button
                                 class="my-4 text-xs hidden md:block bg-[#41b883] border-2 border-[#41b883] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#41b883]"
                             >
@@ -88,6 +88,8 @@
                             </button>
                         </div>
                     </Transition>
+                    </div>
+
                 </div>
                 <div
                     class="bg-[#38bdf8] w-5/12 grid content-center justify-items-start transition-all ease-in delay-150 duration-300 p-4 md:p-8 cursor-pointer"
@@ -151,7 +153,11 @@
             </div>
         </div>
         <div>
-          <h1 class="text-md md:text-4xl text-gray-500 font-poppins my-4 text-center">Projects</h1>
+            <h1
+                class="text-md md:text-4xl text-gray-500 font-poppins my-4 text-center"
+            >
+                Projects
+            </h1>
         </div>
     </div>
 </template>
