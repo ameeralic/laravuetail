@@ -25,7 +25,7 @@
                     ></div>
 
                     <p
-                        class="text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
+                        class="my-4 text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
                         :class="
                             laravelMouseover ? 'text-[#ff2d20]' : 'text-white'
                         "
@@ -42,34 +42,13 @@
                             v-if="laravelShow && laravelMouseover"
                             class="grid justify-items-end"
                         >
-                            <p
-                                class="hidden md:block w-1/2 text-right my-4 text-gray-500 font-poppins font-thin"
-                            >
-                                Laravel is a web application framework with
-                                expressive, elegant syntax. We’ve already laid
-                                the foundation — freeing you to create without
-                                sweating the small things.
-                            </p>
                             <button
-                                class="hidden md:block bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
+                                class="my-4 text-xs hidden md:block bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
                             >
                                 Visit Laravel Official site
                             </button>
-                            <!-- <p class="text-gray-600 font-poppins text-right my-4 pl-8">
-                        LaraVueTail is a library of Open source web applications built with Laravel, Vue and Tailwind CSS.
-                     </p> -->
                         </div>
                     </Transition>
-                    <div class="hidden md:block h-24">
-                        <p
-                            class="text-gray-600 font-poppins text-right my-4 pl-8"
-                            v-if="laravelShow && laravelMouseover"
-                        >
-                            LaraVueTail is a library of Open source web
-                            applications built with Laravel, Vue and Tailwind
-                            CSS.
-                        </p>
-                    </div>
                 </div>
 
                 <div
@@ -89,39 +68,26 @@
                         "
                     ></div>
                     <p
-                        class="text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
+                        class="text-center text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
                         :class="vueMouseover ? 'text-[#41b883]' : 'text-white'"
                     >
                         <span>Vue</span>
-                        <!-- <Transition name="fade"> -->
                         <Transition name="slide-fade">
                             <span v-if="vueShow && vueMouseover">.JS</span>
                         </Transition>
-                        <Transition name="slide-fade">
+                    </p>
+                    <Transition name="slide-fade">
                         <div
                             v-if="vueShow && vueMouseover"
-                            class="grid justify-items-center"
+                            class=""
                         >
-                            <p
-                                class="hidden md:block w-1/2 text-right my-4 text-gray-500 font-poppins font-thin text-lg"
-                            >
-                                Laravel is a web application framework with
-                                expressive, elegant syntax. We’ve already laid
-                                the foundation — freeing you to create without
-                                sweating the small things.
-                            </p>
                             <button
-                                class="text-lg hidden md:block bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
+                                class="my-4 text-xs hidden md:block bg-[#41b883] border-2 border-[#41b883] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#41b883]"
                             >
-                                Visit Laravel Official site
+                                Visit Vue Official site
                             </button>
-                            <!-- <p class="text-gray-600 font-poppins text-right my-4 pl-8">
-                        LaraVueTail is a library of Open source web applications built with Laravel, Vue and Tailwind CSS.
-                     </p> -->
                         </div>
                     </Transition>
-                        <!-- </Transition> -->
-                    </p>
                 </div>
                 <div
                     class="bg-[#38bdf8] w-5/12 grid content-center justify-items-start transition-all ease-in delay-150 duration-300 p-4 md:p-8 cursor-pointer"
@@ -217,7 +183,7 @@ export default {
                 this.laravelMouseover = false;
                 this.tailMouseover = false;
                 setTimeout(() => (this.vueShow = true), 500);
-                setTimeout(() => (this.vueMouseover = false), 3000);
+                setTimeout(() => (this.vueMouseover = false), 10000);
             } else {
                 this.vueShow = false;
             }
