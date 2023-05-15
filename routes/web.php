@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectPageController;
 use App\Http\Controllers\PublicPagesController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -16,4 +17,5 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [PublicPagesController::class,'index']);
+Route::get('/projects/ecommerce', [ProjectPageController::class,'ecommerce']);
 Route::get('/about', [PublicPagesController::class,'about']);
