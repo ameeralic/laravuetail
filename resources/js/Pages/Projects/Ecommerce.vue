@@ -5,7 +5,7 @@
             <div class="bg-[#41b883] min-h-screen w-1/3"></div>
             <div class="bg-[#38bdf8] min-h-screen w-1/3"></div>
         </div>
-        <div class="relative pl-3 md:pl-10 py-10 max-w-3xl">
+        <div class="relative pl-5 md:pl-10 py-10 max-w-3xl">
             <div class="min-h-48">
                 <p class="text-xl md:text-2xl text-zinc-100 font-poppins mb-5">
                     E-Commerce Website
@@ -139,7 +139,7 @@
                 </p>
 
                 <ol
-                    class="list-decimal text-sm text-zinc-100 font-poppins font-thin pl-3 space-y-2 mr-2"
+                    class="list-decimal text-sm text-zinc-100 font-poppins font-thin pl-5 space-y-2 mr-2"
                 >
                     <li>
                         Clone or Download the git repository to your destined folder.

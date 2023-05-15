@@ -158,7 +158,7 @@
             </div>
             <div class="grid md:grid-cols-2 my-24 mx-5 justify-items-center">
                 <div
-                    class="max-w-sm bg-white border border-zinc-200 rounded-lg shadow dark:bg-zinc-900 dark:border-zinc-700 font-poppins"
+                    class="max-w-sm border rounded-lg shadow bg-zinc-900 border-zinc-700 font-poppins"
                 >
                     <a href="#">
                         <img
