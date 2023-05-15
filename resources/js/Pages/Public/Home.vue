@@ -18,7 +18,7 @@
                 ></div>
 
                 <p
-                    class="my-4 text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
+                    class="my-1 md:my-4 text-xl md:text-4xl font-bold tracking-tight lg:text-4xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
                     :class="laravelMouseover ? 'text-[#ff2d20]' : 'text-white'"
                 >
                     <span>Lara</span>
@@ -33,9 +33,9 @@
                             class="grid justify-items-end"
                         >
                             <button
-                                class="my-4 text-xs md:text-base hidden md:block bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
+                                class="my-1 md:my-4 text-xs md:text-sm bg-[#ff2d20] border-2 border-[#ff2d20] rounded-full px-4 py-1 font-poppins text-white hover:bg-white hover:text-[#ff2d20]"
                             >
-                                Visit Laravel Official site
+                                Visit Laravel
                             </button>
                         </div>
                     </Transition>
@@ -58,7 +58,7 @@
                     "
                 ></div>
                 <p
-                    class="text-center text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
+                    class="text-center text-xl md:text-4xl font-bold tracking-tight lg:text-4xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
                     :class="vueMouseover ? 'text-[#41b883]' : 'text-white'"
                 >
                     <span>Vue</span>
@@ -70,9 +70,9 @@
                     <Transition name="slide-fade">
                         <div v-if="vueShow && vueMouseover" class="">
                             <button
-                                class="my-4 text-xs md:text-base hidden md:block bg-[#41b883] border-2 border-[#41b883] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#41b883]"
+                                class="my-1 md:my-4 text-xs md:text-sm bg-[#41b883] border-2 border-[#41b883] rounded-full px-4 py-1 font-poppins text-white hover:bg-white hover:text-[#41b883]"
                             >
-                                Visit Vue Official site
+                                Visit Vue.js
                             </button>
                         </div>
                     </Transition>
@@ -94,7 +94,7 @@
                     "
                 ></div>
                 <p
-                    class="text-xl md:text-4xl font-bold tracking-tight lg:text-8xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
+                    class="text-xl md:text-4xl font-bold tracking-tight lg:text-4xl font-poppins tracking-wider transition-all ease-in delay-150 duration-300"
                     :class="tailMouseover ? 'text-[#38bdf8]' : 'text-white'"
                 >
                     <span>Tail</span>
@@ -106,9 +106,9 @@
                     <Transition name="slide-fade">
                         <div v-if="tailwindShow && tailMouseover" class="">
                             <button
-                                class="my-4 text-xs md:text-base hidden md:block bg-[#38bdf8] border-2 border-[#38bdf8] rounded-full px-6 py-2 font-poppins text-white hover:bg-white hover:text-[#38bdf8]"
+                                class="my-1 md:my-4 text-xs md:text-sm bg-[#38bdf8] border-2 border-[#38bdf8] rounded-full px-4 py-1 font-poppins text-white hover:bg-white hover:text-[#38bdf8]"
                             >
-                                Visit Vue Official site
+                                Visit Tailwind
                             </button>
                         </div>
                     </Transition>
@@ -120,7 +120,7 @@
                 class="mx-auto max-w-screen grid justify-items-center content-center px-7"
             >
                 <p
-                    class="text-xs md:text-xl font-poppins text-center my-4 p-2 rounded-full px-4 shadow-lg"
+                    class="text-xs md:text-base font-poppins text-center my-4 p-2 rounded md:rounded-lg px-4 shadow-lg"
                     :class="
                         laravelMouseover || vueMouseover || tailMouseover
                             ? 'bg-gray-600/75 text-white'
@@ -131,24 +131,27 @@
                     is a library of Open source web applications built with
                     <br />Laravel, Vue and Tailwind CSS.
                 </p>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-8 h-8 text-gray-600 bg-white rounded-full p-2 shadow-lg"
+                <a
+                    href="#projects"
                 >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-                    />
-                </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="w-8 h-8 text-gray-600 bg-white rounded-full p-2 shadow-lg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                        /></svg
+                ></a>
             </div>
         </div>
         <!-- </div> -->
-        <div class="min-h-screen py-24 md:max-w-6xl mx-auto">
+        <div class="min-h-screen py-10 md:py-24 md:max-w-6xl mx-auto" id="projects">
             <div class="w-fit mx-auto">
                 <h1
                     class="p-1 font-poppins font-bold text-xl md:text-4xl tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#ff2d20] from-33% via-[#41b883] via-66% to-[#38bdf8] to-90%"
@@ -156,7 +159,7 @@
                     Projects
                 </h1>
             </div>
-            <div class="grid md:grid-cols-2 my-24 mx-5 justify-items-center">
+            <div class="grid md:grid-cols-2 my-10 md:my-24 mx-5 justify-items-center">
                 <div
                     class="max-w-sm border rounded-lg shadow bg-zinc-900 border-zinc-700 font-poppins"
                 >
@@ -224,7 +227,7 @@
                         <p class="text-gray-300 text-sm mb-1 font-normal">
                             About :
                         </p>
-                        <p class="text-gray-400 text-sm mb-4 font-thin">
+                        <p class="text-gray-400 text-xs md:text-sm mb-4 font-thin">
                             An E-Commerce website build in VILT(Vue, Inertia,
                             Laravel, Tailwind) Stack.
                             <br />
@@ -255,7 +258,7 @@
                                     ></path>
                                 </svg>
                             </Link>
-                            <a
+                            <!-- <a
                                 href="#"
                                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-zinc-700 rounded-lg hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
                             >
@@ -274,7 +277,7 @@
                                         d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                                     />
                                 </svg>
-                            </a>
+                            </a> -->
                             <a
                                 href="#"
                                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-zinc-700 rounded-lg hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
@@ -293,7 +296,8 @@
     <Footer></Footer>
 </template>
 <script setup>
-import Footer from '../../Shared/Footer.vue';
+import vue from "@heroicons/vue";
+import Footer from "../../Shared/Footer.vue";
 </script>
 <script>
 export default {
@@ -305,7 +309,30 @@ export default {
             vueMouseover: false,
             tailwindShow: false,
             tailMouseover: false,
+            count:0
         };
+    },
+    mounted(){
+        setInterval(this.enableRandom,5000)
+    },
+    methods:{
+        enableRandom(){
+            this.count++
+            var x = this.count%3
+            switch (x) {
+                case 0:
+                    this.laravelMouseover = !this.laravelMouseover
+                    break;
+                case 1:
+                    this.vueMouseover = !this.vueMouseover
+                    break;
+                case 2:
+                    this.tailMouseover = !this.vueMouseover
+                    break;
+                default:
+                    break;
+            }
+        }
     },
     watch: {
         laravelMouseover(newValue, oldValue) {
@@ -323,7 +350,7 @@ export default {
                 this.laravelMouseover = false;
                 this.tailMouseover = false;
                 setTimeout(() => (this.vueShow = true), 500);
-                setTimeout(() => (this.vueMouseover = false), 10000);
+                setTimeout(() => (this.vueMouseover = false), 3000);
             } else {
                 this.vueShow = false;
             }
