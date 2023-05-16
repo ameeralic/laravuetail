@@ -1,4 +1,8 @@
 <template>
+    <Head>
+  <title>Home</title>
+  <meta name="description" content="LaraVueTail is a library of open source web applications built with Laravel, vue and Tailwind CSS">
+</Head>
     <div class="bg-zinc-800">
         <div class="flex h-screen max-w-screen">
             <div
@@ -279,7 +283,9 @@
                                 </svg>
                             </a> -->
                             <a
-                                href="#"
+                                href="https://github.com/LaraVueTail/ecommerce-laravel-vue-tailwind-inertia-VILT-Stack"
+                                target="_blank"
+
                                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-zinc-700 rounded-lg hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
                             >
                                 Github
